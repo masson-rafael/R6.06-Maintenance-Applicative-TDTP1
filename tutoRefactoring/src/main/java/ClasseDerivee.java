@@ -4,4 +4,11 @@ public class ClasseDerivee extends BaseClass{
         System.out.println("Doublement 21. Résultat = " + subject.doubleValue(21));
     }
 
+    /**
+     * @param number  - le nombre à doubler
+     * @return  - 2*number
+     */
+    protected int doubleValue(int number) {
+        return number + number;
+    }
 }
