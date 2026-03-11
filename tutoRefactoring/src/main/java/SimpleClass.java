@@ -1,5 +1,4 @@
 import java.time.LocalDate;
-import java.util.Locale;
 
 public class SimpleClass {
 
@@ -12,7 +11,7 @@ public class SimpleClass {
      * @param b - second paramètre
      * @return
      */
-    public int someAdditionMethod(int a, int b) {
+    public int add(int a, int b) {
         return a + b ;
     }
 
@@ -24,7 +23,7 @@ public class SimpleClass {
     }
 
     public static void main(String[] args) {
-        new SimpleClass().someAdditionMethod(1,2);
+        new SimpleClass().add(1,2);
 
         System.out.println("Hello world");
     }
