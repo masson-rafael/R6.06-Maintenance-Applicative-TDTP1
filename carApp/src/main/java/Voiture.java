@@ -16,13 +16,17 @@ public class Voiture {
         return this.vitesse;
     }
 
+    private void afficherDetailVoiture() {
+        System.out.println("Modèle : " + modele);
+        System.out.println("Couleur : " + couleur);
+        System.out.println("Vitesse actuelle : " + vitesse);
+    }
+
     public void accelerer() {
         if (vitesse + INTERVAL <= VITESSE_MAX) {
             vitesse += INTERVAL;
             // afficher détails
-            System.out.println("Modèle : " + modele);
-            System.out.println("Couleur : " + couleur);
-            System.out.println("Vitesse actuelle : " + vitesse);
+            afficherDetailVoiture();
         } else {
             System.out.println("La vitesse maximale est atteinte.");
         }
@@ -32,9 +36,7 @@ public class Voiture {
         if (vitesse - INTERVAL >= VITESSE_MIN) {
             vitesse -= INTERVAL;
             // afficher détails
-            System.out.println("Modèle : " + modele);
-            System.out.println("Couleur : " + couleur);
-            System.out.println("Vitesse actuelle : " + vitesse);
+            afficherDetailVoiture();
         } else {
             System.out.println("La voiture est déjà à l'arrêt.");
         }
