@@ -44,5 +44,9 @@ public class Voiture {
             System.out.println("Le conducteur n'est pas assez âgé pour conduire.");
         }
     }
+
+    public void arreterVoiture(Conducteur conducteur) {
+        System.out.println(conducteur.getNom() + " arrête la voiture.");
+    }
 }
 

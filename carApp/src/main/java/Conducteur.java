@@ -13,10 +13,6 @@ public class Conducteur {
 
     public String getNom() { return nom; }
 
-    public void arreterVoiture(Voiture voiture) {
-        System.out.println(nom + " arrête la voiture.");
-    }
-
     public void changerVitesse(Voiture voiture, int nouvelleVitesse) {
         System.out.println(nom + " change la vitesse de la voiture à " + nouvelleVitesse);
         int vitesseActuelle;

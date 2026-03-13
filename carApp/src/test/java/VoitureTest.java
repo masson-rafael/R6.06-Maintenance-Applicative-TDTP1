@@ -34,7 +34,7 @@ public class VoitureTest {
     @Test
     public void testArreterVoiture() {
         Conducteur conducteur = new Conducteur("John", 20);
-        //voiture.arreterVoiture(conducteur);
+        voiture.arreterVoiture(conducteur);
         // check message
     }
 

@@ -14,7 +14,7 @@ public class Application {
         moi.changerVitesse(maVoiture, NOUVELLE_VITESSE_1);
         maVoiture.ralentir();
         moi.changerVitesse(maVoiture, NOUVELLE_VITESSE_2);
-        moi.arreterVoiture(maVoiture);
+        maVoiture.arreterVoiture(moi);
         System.out.println("fini");
     }
 }
