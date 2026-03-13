@@ -13,17 +13,4 @@ public class Conducteur {
 
     public String getNom() { return nom; }
 
-    public void changerVitesse(Voiture voiture, int nouvelleVitesse) {
-        System.out.println(nom + " change la vitesse de la voiture à " + nouvelleVitesse);
-        int vitesseActuelle;
-        if (voiture.getVitesse() >= nouvelleVitesse) {
-            while (voiture.getVitesse() > nouvelleVitesse) {
-                voiture.ralentir();
-            }
-        } else  {
-            while (voiture.getVitesse() < nouvelleVitesse) {
-                voiture.accelerer();
-            }
-        }
-    }
 }

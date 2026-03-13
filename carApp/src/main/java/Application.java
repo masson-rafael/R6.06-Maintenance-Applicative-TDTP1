@@ -11,9 +11,9 @@ public class Application {
 
         maVoiture.demarrerVoiture(moi);
         maVoiture.accelerer();
-        moi.changerVitesse(maVoiture, NOUVELLE_VITESSE_1);
+        maVoiture.changerVitesse(NOUVELLE_VITESSE_1, moi);
         maVoiture.ralentir();
-        moi.changerVitesse(maVoiture, NOUVELLE_VITESSE_2);
+        maVoiture.changerVitesse(NOUVELLE_VITESSE_2, moi);
         maVoiture.arreterVoiture(moi);
         System.out.println("fini");
     }

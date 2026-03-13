@@ -48,5 +48,19 @@ public class Voiture {
     public void arreterVoiture(Conducteur conducteur) {
         System.out.println(conducteur.getNom() + " arrête la voiture.");
     }
+
+    public void changerVitesse(int nouvelleVitesse, Conducteur conducteur) {
+        System.out.println(conducteur.getNom() + " change la vitesse de la voiture à " + nouvelleVitesse);
+        int vitesseActuelle;
+        if (getVitesse() >= nouvelleVitesse) {
+            while (getVitesse() > nouvelleVitesse) {
+                ralentir();
+            }
+        } else  {
+            while (getVitesse() < nouvelleVitesse) {
+                accelerer();
+            }
+        }
+    }
 }
 

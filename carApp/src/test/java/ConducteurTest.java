@@ -34,7 +34,7 @@ public class ConducteurTest {
     public void testChangerVitesse() {
         Voiture voiture = new Voiture("Sedan", "Bleu");
 
-        conducteur.changerVitesse(voiture, 80);
+        voiture.changerVitesse(80, conducteur);
         assertThat(voiture.getVitesse()).isEqualTo(80);
     }
 }
