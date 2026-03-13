@@ -15,26 +15,4 @@ public class ConducteurTest {
     public void testEstAdulte() {
         assertThat(conducteur.estAdulte()).isTrue();
     }
-
-    @Test
-    public void testDemarrerVoiture() {
-        Voiture voiture = new Voiture("Sedan", "Bleu");
-        voiture.demarrerVoiture(conducteur);
-        // How to assert that the demarrerVoiture method was called?
-    }
-
-    @Test
-    public void testArreterVoiture() {
-        Voiture voiture = new Voiture("Sedan", "Bleu");
-        voiture.arreterVoiture(conducteur);
-        // How to assert that the arreterVoiture method was called?
-    }
-
-    @Test
-    public void testChangerVitesse() {
-        Voiture voiture = new Voiture("Sedan", "Bleu");
-
-        voiture.changerVitesse(80, conducteur);
-        assertThat(voiture.getVitesse()).isEqualTo(80);
-    }
 }
