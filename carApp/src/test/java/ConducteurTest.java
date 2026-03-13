@@ -8,11 +8,17 @@ public class ConducteurTest {
 
     @BeforeEach
     public void setUp() {
+        // GIVEN
         conducteur = new Conducteur("John", 20);
     }
 
     @Test
-    public void testEstAdulte() {
+    public void testEstAdulteDevraitRetournerTrue() {
+        // GIVEN
+
+        // WHEN
+
+        // THEN
         assertThat(conducteur.estAdulte()).isTrue();
     }
 }

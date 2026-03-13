@@ -1,4 +1,7 @@
 public class Voiture {
+    public static final int VITESSE_MAX = 120;
+    public static final int INTERVAL = 10;
+    public static final int VITESSE_MIN = 0;
     private String modele;
     private String couleur;
     private int vitesse;
@@ -14,8 +17,8 @@ public class Voiture {
     }
 
     public void accelerer() {
-        if (vitesse + 10 <= 120) {
-            vitesse += 10;
+        if (vitesse + INTERVAL <= VITESSE_MAX) {
+            vitesse += INTERVAL;
             // afficher détails
             System.out.println("Modèle : " + modele);
             System.out.println("Couleur : " + couleur);
@@ -26,8 +29,8 @@ public class Voiture {
     }
 
     public void ralentir() {
-        if (vitesse - 10 >= 0) {
-            vitesse -= 10;
+        if (vitesse - INTERVAL >= VITESSE_MIN) {
+            vitesse -= INTERVAL;
             // afficher détails
             System.out.println("Modèle : " + modele);
             System.out.println("Couleur : " + couleur);
@@ -52,6 +55,7 @@ public class Voiture {
     public void changerVitesse(int nouvelleVitesse, Conducteur conducteur) {
         System.out.println(conducteur.getNom() + " change la vitesse de la voiture à " + nouvelleVitesse);
         int vitesseActuelle;
+
         if (getVitesse() >= nouvelleVitesse) {
             while (getVitesse() > nouvelleVitesse) {
                 ralentir();
