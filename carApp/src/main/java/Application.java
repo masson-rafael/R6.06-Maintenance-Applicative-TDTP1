@@ -9,7 +9,7 @@ public class Application {
         Voiture maVoiture = new Voiture("Sedan", "Bleu");
         Conducteur moi = new Conducteur("John", AGE);
 
-        moi.demarrerVoiture(maVoiture);
+        maVoiture.demarrerVoiture(moi);
         maVoiture.accelerer();
         moi.changerVitesse(maVoiture, NOUVELLE_VITESSE_1);
         maVoiture.ralentir();

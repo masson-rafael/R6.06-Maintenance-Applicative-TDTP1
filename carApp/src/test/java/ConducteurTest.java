@@ -19,7 +19,7 @@ public class ConducteurTest {
     @Test
     public void testDemarrerVoiture() {
         Voiture voiture = new Voiture("Sedan", "Bleu");
-        conducteur.demarrerVoiture(voiture);
+        voiture.demarrerVoiture(conducteur);
         // How to assert that the demarrerVoiture method was called?
     }
 
