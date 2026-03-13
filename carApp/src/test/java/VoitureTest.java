@@ -23,4 +23,25 @@ public class VoitureTest {
         voiture.ralentir();
         assertThat(voiture.getVitesse()).isEqualTo(0);
     }
+
+    @Test
+    public void testDemarrerVoitureAdulte() {
+        Conducteur conducteur = new Conducteur("John", 20);
+        voiture.demarrerVoiture(conducteur);
+        // check message
+    }
+
+    @Test
+    public void testArreterVoiture() {
+        Conducteur conducteur = new Conducteur("John", 20);
+        //voiture.arreterVoiture(conducteur);
+        // check message
+    }
+
+    @Test
+    public void testChangerVitesse() {
+        Conducteur conducteur = new Conducteur("John", 20);
+        //voiture.arreterVoiture(conducteur);
+        // check message
+    }
 }
